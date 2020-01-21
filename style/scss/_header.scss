@@ -1,0 +1,126 @@
+//$header-max-width : 1200px;
+
+.header-layout {
+  position: fixed;
+  width: 100%;
+  //max-width: $header-max-width;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px 0 20px;
+  background-color: transparent;
+  transition: background-color .5s;
+  z-index: 1;
+
+  &__logo {
+    width: 70px;
+    height: 41px;
+
+    .logo-link {
+      display: inline-block;
+      text-decoration: none;
+      height: 100%;
+    }
+  }
+
+  &__navigation-bar {
+    width: 449px;
+    height: 19px;
+
+    .navigation-list {
+      list-style-type: none;
+      font-size: 16px;
+      letter-spacing: 0.57px;
+      line-height: 19px;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+
+      &__item{
+        white-space: nowrap;
+        position: relative;
+
+        .submenu-list {
+          list-style-type: none;
+          font-size: 16px;
+          line-height: 19px;
+          display: none;
+          background-color: #1F2427;
+
+          &:hover {
+            display: block;
+            position: absolute;
+          }
+
+          &__item {
+            width: 200px;
+            padding: 10px;
+            border-bottom: 1px solid #4b5053;
+          }
+        }
+
+        @mixin hover-triangle($color) {
+          content: "";
+          display: inline-block;
+          box-sizing: border-box;
+          width: 6.5px;
+          height: 3px;
+          border: 3px solid transparent;
+          border-top: 3px solid $color;
+          margin-left: 4px;
+        }
+
+        .dropdown:after {
+          @include hover-triangle (#fff);
+        }
+
+        .nav-link {
+          text-decoration: none;
+          color: #fff;
+
+          &:hover {
+            color: #0fafcf;
+
+            & + .submenu-list {
+              display: block;
+              position: absolute;
+            }
+          }
+
+          &:hover.dropdown:after {
+            @include hover-triangle (#0fafcf);
+          }
+        }
+      }
+    }
+  }
+
+  &__social {
+    width: 136px;
+    .social-list {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+
+      &__item {
+        //background-color: #fff;
+        width: 32px;
+        height: 32px;
+        .socio-link {
+          display: inline-block;
+          height: 100%;
+
+          img {
+            background-size: contain;
+            width: 32px;
+            height: 32px;
+          }
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,51 @@
+.main-features {
+  max-width: 976px;
+  min-height: 169px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 495px;
+
+  .feature {
+    height: 169px;
+    width: 276px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    padding: 4px 3px;
+
+    &:hover {
+      border: 1px solid #06C6FF;
+
+      .feature__header {
+        color: #06C6FF;
+      }
+    }
+
+    &__container {
+      background-color: #202E39;
+      height: 160px;
+      width: 269px;
+    }
+
+    &__header {
+      font-family: "Roboto Condensed", serif;
+      font-size: 26px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      line-height: 34px;
+      color: #D8D8D8;
+      text-transform: uppercase;
+    }
+
+    &__describe {
+      color: #BCBCBC;
+      font-family: Roboto, sans-serif;
+      font-size: 16px;
+      letter-spacing: 0.57px;
+      line-height: 19px;
+      width: 226px;
+    }
+  }
+}

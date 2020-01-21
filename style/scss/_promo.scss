@@ -1,0 +1,60 @@
+.promo {
+  width: 626px;
+  height: 244px;
+  display: inline-block;
+  margin-top: 375px;
+  padding-left: 20px;
+
+  &__header {
+    -webkit-text-stroke: 2px #fff;
+    -webkit-text-fill-color: transparent;
+    height: 131px;
+    width: 626px;
+    font-family: "Roboto Condensed";
+    font-size: 111px;
+    font-weight: bold;
+    letter-spacing: 1.23px;
+    line-height: 130px;
+    text-transform: uppercase;
+
+    &_describe {
+      height: 43px;
+      width: 618px;
+      color: #FFFFFF;
+      font-family: "Roboto Condensed";
+      font-size: 37px;
+      font-weight: bold;
+      letter-spacing: 0.83px;
+      line-height: 49px;
+      text-transform: uppercase;
+    }
+  }
+
+  .main-describe {
+    height: 43px;
+    margin-top: 42px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    &__text {
+      height: 29px;
+      width: 460px;
+      color: #FFFFFF;
+      font-family: "Roboto Condensed";
+      font-size: 25px;
+      letter-spacing: 1.25px;
+      line-height: 33px;
+    }
+
+    .button-for-talk {
+      height: 43px;
+      width: 138px;
+      border-radius: 2px;
+      background-color: #FFFFFF;
+      box-shadow: 0 2px 18px 0 rgba(219,231,254,0.93);
+      color: #161616;
+    }
+  }
+}

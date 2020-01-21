@@ -1,0 +1,17 @@
+.feature-animation-one {
+  transform: rotateY(90deg);
+  opacity: 0;
+  transition: transform 3s, opacity 3s;
+}
+
+.feature-animation-two {
+  transform: rotateY(-90deg);
+  opacity: 0;
+  transition: transform 3s, opacity 3s;
+}
+
+.feature-animation-three {
+  transform: scale(.5);
+  opacity: 0;
+  transition: transform 3s, opacity 3s;
+}

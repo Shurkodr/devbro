@@ -1,0 +1,17 @@
+.main-info {
+  background-image: radial-gradient(
+      at 78% 365px,
+      rgb(6, 198, 255),
+      rgb(26, 69, 90),
+      rgb(28, 51, 72),
+      rgb(29, 40, 54),
+      rgb(31, 36, 39) 60%
+  );
+  padding-bottom: 146px;
+
+  .main-stone {
+    position: absolute;
+    top: 170px;
+    right: 40px;
+  }
+}
